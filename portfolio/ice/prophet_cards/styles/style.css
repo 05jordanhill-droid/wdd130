@@ -1,0 +1,26 @@
+body{
+    background-color: #FFECD7;
+}
+
+title{
+    color: #FFFFFE;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#card{
+    background-color: #008DB1;
+    border-color: #004E63;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+    max-width: 33.3333333333%;
+}
+.subtitle{
+    color: #91E4FB;
+}
+.list{
+    color: #FFFFFE;
+}
+.quote{
+    color: #FFD783;
+    font-family: "Brush Script MT", "Nahum Brush Script";
+}

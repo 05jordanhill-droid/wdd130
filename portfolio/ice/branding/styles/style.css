@@ -1,0 +1,76 @@
+body{
+    background-color: #32312f;
+
+}
+
+#content{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column: 2/-2;
+    background-color: white;
+    margin-left: 0;
+    max-width: 50%;
+    margin: 10% auto;
+}
+
+.words{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #5f6063;
+    padding: 15px;
+}
+
+.words header{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.words section{
+    font-weight: 100;
+}
+
+.subtitle{
+    margin-bottom: 37px;
+    font-size: 20px;
+}
+
+.fillout{
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 7px;
+    text-align: left;
+    margin: 17px auto;
+}
+.fillout div{
+    margin: 15px auto 15px 15px;
+}
+
+.checkbox{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.box{
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+    aspect-ratio: 1/1;
+}
+.message{
+    font-size: 12px;
+    margin: auto auto 3px 1px;
+    color: black;
+}
+
+.subscribe{
+    background-color: #e09a6a;
+    color: white;
+    width: 33.333333333333333333333333333%;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 11px 13px;
+}
+.subscribe h3{
+    margin: 0;
+}
+
+.x{
+    margin: 10px 10px auto auto;
+}

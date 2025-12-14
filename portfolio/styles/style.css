@@ -1,0 +1,182 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr auto;
+    margin: 30px;
+    gap: 20px;
+
+    background: 
+        linear-gradient(to bottom, rgb(0, 0, 0, 0), rgb(59, 0, 54)),
+        url("../images/sun.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    font-size: 4em;
+    margin: 0;
+}
+.aboutme p{
+    border: 2px solid black;
+    font-size: 2em;
+    background-color: rgb(0, 0, 0, .5);
+}
+.aboutme{
+    grid-column: 1/2;
+}
+header img{
+    width: 90%;
+    height: auto;
+    border: 20px solid silver;
+    grid-row: 1/-1;
+    grid-column: -1/-2;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    background: 
+        linear-gradient(rgb(59, 0, 54), rgb(59, 0, 54), rgb(0, 0, 0, 0)),
+        url("../images/stars.gif");
+    padding: 30px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    margin: 10px;
+    text-align: center;
+}
+
+.projects section{
+    aspect-ratio: 1/1;
+    margin: 0;
+    border: 8px solid rgb(0, 17, 93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects section:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+.projects h4{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.projects section:nth-child(1){
+    background-image: url("../images/boarding_pass.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projects section:nth-child(2){
+    background-image: url("../images/prophet_card.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projects section:nth-child(3){
+    background-image: url("../images/branding.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projects section:nth-child(4){
+    background-image: url("../images/apostle_spotlight.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projects section:nth-child(5){
+    background-image: url("../images/post.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projects section:nth-child(6){
+    background-image: url("../images/halloween.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.projects a{
+    text-decoration: none;
+}
+
+footer{
+    padding: 30px;
+    background:
+        radial-gradient(circle, rgb(0, 0, 0) 7%, rgba(0,0,0,0) 70%),
+        url("../images/stars.gif");
+}
+
+.logo{
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    margin: 50px;
+    text-align: center;
+}
+.logo h3{
+    margin: 0;
+    font-size: 3em;
+    color: transparent;
+}
+
+.overlay{
+    width: 100%;
+    color: transparent;
+    text-decoration: none;
+}
+.overlay:hover{
+    color: gray;
+}
+
+.project_description{
+    padding: 10px 0px 0px 100px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto 1fr;
+}
+.project_description section:first-child i{
+    margin-top: 22px;
+}
+.project_description h3{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    line-height: 600px;
+}
+.project_description h3::after{
+    content: "";
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    inset: 0;
+    position: absolute;
+}
+.project_description h3:hover::after{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image{
+    grid-column: 1/-1;
+}
